@@ -1,10 +1,14 @@
 <?php
-use Aws\Ses\SesClient;
-use Aws\Exception\AwsException;
-$credits = new Aws\Credentials\Credentials('kashuasybda', 'UHWWQHuqbqqbweqQWQhqWQHEqwr');
-$SesClient = new SesClient([
-    'region' => 'us-east-1',
-	'version' => 'latest',
-	'details' => $credits
-]);
+require __DIR__ . "/../../vendor/autoload.php";
+
+use telesign\enterprise\sdk\verify\VerifyClient;
+
+$customer_id = "FFFFFFFF-EEEE-DDDD-1234-AB1234567890";
+$api_key = "EXAMPLE----TE8sTgg45yusumoN6BYsBVkh+yRJ5czgsnCehZaOYldPJdmFh6NeX8kunZ2zU1YWaUw/0wV6xfw==";
+
+$phone_number = "phone_number";
+$template = 'Your Widgets \'n\' More verification code is $$CODE$$.';
+
+$verify = new VerifyClient($customer_id, $api_key);
+$response = $verify->sms($phone_number, [ "template" => $template ]);
 ?>
