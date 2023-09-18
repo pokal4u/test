@@ -5,6 +5,9 @@ username = testuser
 password = testpass123
 dbname = testdb
 
+AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
 [API]
 api_key = TEST_API_KEY_12345678
 endpoint = https://test.api.endpoint/
@@ -18,3 +21,5 @@ password = testpassword
 [Logging]
 log_directory = /path/to/test/logs/
 log_level = DEBUG
+
+AKIAIOSFODNN7EXAMPLE
