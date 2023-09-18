@@ -1,0 +1,20 @@
+
+[Database]
+host = localhost
+username = testuser
+password = testpass123
+dbname = testdb
+
+[API]
+api_key = TEST_API_KEY_12345678
+endpoint = https://test.api.endpoint/
+
+[Email]
+smtp_server = smtp.testmail.com
+port = 587
+username = testuser@testmail.com
+password = testpassword
+
+[Logging]
+log_directory = /path/to/test/logs/
+log_level = DEBUG
